@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Helvetica', sans-serif;
+    --ff-secondary: 'Garamond', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+body {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+
+
+.my-contacts {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+
+}
+
+img {
+    display: block;
+    max-width: 100%; 
+}
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 2em;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: transform 200ms ease-in-out;
+    margin-top: 4em;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1  ;
+    margin: 0;
+}
+
+h1 {font-size: var(--fs-h1)};
+h2 {font-size: var(--fs-h2)};
+h3 {font-size: var(--fs-h3)};
+
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+.nav { display: none;}
+
+/* intro section */
+
+.intro {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title--intro {
+
+}
+
+
+
+.my-skills {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.section__title--skills {
+    position: relative  ;
+}
+
+.section__title--skills::after {
+    content: '';
+    display: block;
+    width: 4em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.5;
+}
+
+.skill {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .skills {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }   
+}
+
+.about-me {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+}
+
+.section__title--about::after {
+        content: '';
+        display: block;
+        width: 4em;
+        height: 0.7px;
+        margin: 0.5em auto 1em;
+        background: var(--clr-light);
+        opacity: 0.5;
+}
+
+.footer {
+    text-align: center;
+    padding: 2.5em 0;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.footer a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.mail-link:hover,
+.social-list__link:hover {
+    opacity: 0.7;
+}
+
