@@ -1,3 +1,6 @@
-const navToggle = document.querySelector('.nav-toggle')
+alert("This is some text");
+const navToggle = document.querySelector('.nav-toggle');
 
-navToggle.addEvent 
+navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
